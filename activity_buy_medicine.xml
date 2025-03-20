@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".BuyMedicineActivity">
+
+    <TextView
+        android:id="@+id/textViewDDName"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="🩺24*7 Healthcare🩺"
+        android:textAlignment="center"
+        android:textColor="#F80303"
+        android:textDirection="firstStrongLtr"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+
+    <TextView
+        android:id="@+id/textViewHADTitle"
+        android:layout_width="319dp"
+        android:layout_height="33dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Deliver Location : Pune"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        android:textDirection="firstStrongLtr"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/textViewBMTitle"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Buy Medicines"
+        android:textAlignment="center"
+        android:textColor="#D3C862"
+        android:textDirection="firstStrongLtr"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <ListView
+        android:id="@+id/listViewHA"
+        android:layout_width="364dp"
+        android:layout_height="446dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="16dp"
+        android:cacheColorHint="#F6F3F3"
+        android:outlineSpotShadowColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADTitle"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <Button
+        android:id="@+id/buttonHADBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toEndOf="@+id/buttonBMDGoToCart"
+        app:layout_constraintTop_toBottomOf="@+id/listViewHA" />
+
+    <Button
+        android:id="@+id/buttonBMDGoToCart"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="Go To Cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewHA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
